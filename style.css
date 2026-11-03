@@ -10330,3 +10330,124 @@ body {
         animation: none;
     }
 }
+
+
+
+
+
+/* DLR Navbar Brand Styling */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.brand-main {
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #f04b2f;
+    line-height: 1;
+}
+
+.brand-sub {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #111;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .brand-main {
+        font-size: 30px;
+    }
+
+    .brand-sub {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* LOGO IMAGE */
+.main-navbar .logo {
+    width: 100% !important;
+    height: 90px !important;
+    max-width: 320px !important;
+
+    object-fit: fill !important;
+    object-position: center !important;
+
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+/* LOGO CONTAINER */
+.main-navbar .navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    height: 95px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .main-navbar .logo {
+        width: 285px !important;
+        max-width: 285px !important;
+        height: 85px !important;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 400px) {
+    .main-navbar .logo {
+        width: 260px !important;
+        max-width: 260px !important;
+        height: 80px !important;
+    }
+}
+
+
+.main-navbar .logo {
+    width: 285px !important;
+    height: 70px !important;
+    max-width: 285px !important;
+    object-fit: fill !important;
+    display: block !important;
+}
+
+@media (max-width: 400px) {
+    .main-navbar .logo {
+        width: 260px !important;
+        height: 65px !important;
+    }
+}
+
+
+.main-navbar .logo {
+    width: 260px !important;
+    height: 65px !important;
+    max-width: 260px !important;
+    object-fit: fill !important;
+    display: block !important;
+}
+
+@media (max-width: 400px) {
+    .main-navbar .logo {
+        width: 170px !important;
+        height: 60px !important;
+    }
+}
