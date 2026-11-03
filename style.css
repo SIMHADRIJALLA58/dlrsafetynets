@@ -10184,3 +10184,149 @@ body {
         transition: none !important;
     }
 }
+
+
+
+
+/* =====================================
+   DLR CALL & WHATSAPP BUTTONS
+===================================== */
+
+.trust-contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.trust-contact-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 175px;
+    min-height: 54px;
+    padding: 13px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    overflow: hidden;
+    isolation: isolate;
+    animation: trustButtonBlink 1.8s ease-in-out infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CALL BUTTON */
+
+.trust-call-btn {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.28);
+}
+
+/* WHATSAPP BUTTON */
+
+.trust-whatsapp-btn {
+    background: linear-gradient(135deg, #087f45, #16a34a);
+    box-shadow: 0 8px 22px rgba(22, 163, 74, 0.28);
+}
+
+/* ICON CIRCLE */
+
+.trust-contact-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 15px;
+}
+
+/* ICON RING ANIMATION */
+
+.trust-contact-icon::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    animation: trustIconRing 1.5s ease-out infinite;
+}
+
+/* BUTTON BLINK + ZOOM */
+
+@keyframes trustButtonBlink {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+
+    50% {
+        transform: scale(1.045);
+        filter: brightness(1.15);
+    }
+}
+
+/* ICON RING */
+
+@keyframes trustIconRing {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: scale(1.65);
+        opacity: 0;
+    }
+}
+
+/* HOVER EFFECT */
+
+.trust-contact-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    color: #fff;
+    animation-play-state: paused;
+}
+
+.trust-call-btn:hover {
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45);
+}
+
+.trust-whatsapp-btn:hover {
+    box-shadow: 0 12px 30px rgba(22, 163, 74, 0.45);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .trust-contact-actions {
+        gap: 14px;
+        width: 100%;
+    }
+
+    .trust-contact-btn {
+        flex: 1 1 100%;
+        width: 100%;
+        min-height: 52px;
+    }
+
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .trust-contact-btn,
+    .trust-contact-icon::before {
+        animation: none;
+    }
+}
