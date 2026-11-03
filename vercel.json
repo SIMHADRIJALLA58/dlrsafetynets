@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bengalurusafetynets.vercel.app"
+        }
+      ],
+      "destination": "https://bengalurusafetynets.com/$1",
+      "permanent": true
+    }
+  ]
+}
