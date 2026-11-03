@@ -10451,3 +10451,15 @@ body {
         height: 60px !important;
     }
 }
+
+
+
+
+
+
+.floating-contact-buttons {
+    position: fixed !important;
+    right: 5px !important;
+    bottom: 100px !important;
+    z-index: 99999 !important;
+}
