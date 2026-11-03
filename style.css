@@ -10389,7 +10389,7 @@ body {
     display: block !important;
     margin: 0 auto !important;
     padding: 0 !important;
-    transform: translateX(-10px) !important;
+    transform: translateX(-15px) !important;
 }
 
 /* LOGO CONTAINER */
@@ -10447,7 +10447,7 @@ body {
 @media (max-width: 400px) {
     .main-navbar .logo {
         width: 220px !important;
-        height: 68px !important;
+        height: 67px !important;
     }
 }
 
